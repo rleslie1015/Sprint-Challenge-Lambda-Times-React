@@ -4,7 +4,11 @@ import Card from './Card';
 const Cards = props => {
   return (
     <div className="cards-container">
-      {props.cards.map((singleCard) => <Card card={singleCard} />)}
+      {props.cards.map((card, i) => 
+      <Card 
+        key={i}
+        card={card} 
+        />)}
     </div>
   )
 }
