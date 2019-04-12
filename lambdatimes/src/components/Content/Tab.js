@@ -5,7 +5,7 @@ const Tab = props => {
     return (
       <div
         className={'tab active-tab'}
-        onClick={(tab) => {props.selectTabHandler}}
+        onClick={(tab) => props.selectTabHandler(tab)}
       >
         {props.tab.toUpperCase()}
       </div>
@@ -14,7 +14,7 @@ const Tab = props => {
     return (
       <div
         className={'tab'}
-        onClick={(tab) => { props.selectTabHandler}}
+        onClick={(tab) => props.selectTabHandler(tab)}
       >
         {props.tab.toUpperCase()}
       </div>
